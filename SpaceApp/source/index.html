@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>SPACE-TECHIES</title>
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <link href=".././node_modules/select2-4.0.3/dist/css/select2.min.css" rel="stylesheet" />
+  <script src=".././node_modules/select2-4.0.3/dist/js/select2.min.js"></script>
+  <script src=".././node_modules/cesium/Build/Cesium/Cesium.js"></script> 
+ 
+ <style>
+  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+  </style>
+  <style>
+   
+      @import url(.././node_modules/cesium/Build/Cesium/Widgets/widgets.css);
+      html, body, #cesiumContainer {
+          height: 100%; margin: 0; padding: 0; overflow: hidden;
+      }
+      
+
+  </style>
+  <link rel="stylesheet" type="text/css" href=".././node_modules/photon-0.1.2-alpha/dist/css/photon.css">
+</head>
+<body>
+   <div class="window">
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+        <h1 class="title" style="font-size: 1.7vw"><b>Tourist FlyBy by SPACE TECHIES </b></h1>
+       <img src="./images/logonew.png" alt="SpaceApp" style="float:left ;width:55px;height:50px; margin: -38px 0 0 5%;"> 
+        <img  src="./images/218px-Flag_of_Pakistan.svg.png" alt="Pakistan Flag" style="float:right;width:52px;height:35px;background-color:white; margin: -35px 5% 0 0;" >
+        
+        <h1 class="title" style="float:centre"><b></b></h1>
+      </header>
+
+      <header class="toolbar toolbar-header"> 
+        <div class="toolbar-actions">
+        <div> </div>
+        <div class="btn-group">
+            
+            <button class="btn btn-large btn-default" title="Home">
+              <span class="icon icon-home"></span>
+            </button>
+
+            <button class="btn btn-large btn-default" id="switch" title="Slide Navigation Menu">        
+              <span class="icon icon-list"></span>
+            </button>
+
+            
+
+
+        </div>
+
+            <button class="btn btn-large btn-default pull-right js-popover-trigger" id = "help-btn" title="Help">       
+              <span class="icon icon-help"></span>
+            </button>
+
+            <!--
+            <button class="btn btn-large  pull-right js-popover-trigger">
+            <! <span class="icon icon-record  pull-right js-popover-trigger" style="color:#fc605b"></span> 
+            <span class="icon icon-record" style="color:#34c84a"></span> -->
+              
+
+        </div>
+      </header>
+        
+     
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+    
+        <div class="pane-group">
+      
+        <div class="pane-sm sidebar">
+            <select  class="js-data-array"  style="width: 100%"><option></option></select>
+            
+            <nav class="nav-group"  id = "serp-nav" >
+                <h5 class="nav-group-title"><b>Flights</b></h5></a>
+                <span class="nav-group-item" id="serp-class">ISB-GILGIT                      
+                      <span class="icon icon-rocket"></span>
+                </span>
+              
+            </nav>
+
+
+       </div>
+      
+      
+       <div class="pane" id="main-content">
+
+
+
+
+
+                <div id = "cesiumContainer"> 
+  
+                </div>
+                
+    
+    </div>
+  </div>
+</div>
+  
+<footer class="toolbar toolbar-footer">
+ <!-- <p style="text-align: center"><b> &copy; SERP<b></p>-->
+</footer>
+
+
+<script src="./js/index_cesium.js"></script>
+<script src="./js/index.js"></script>
+
+</body>
+</html>
+

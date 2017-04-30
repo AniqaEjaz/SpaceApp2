@@ -1,0 +1,42 @@
+{
+  "name": "PilotPlus",
+  "version": "0.0.1",
+  "description": "SpaceApp",
+  "main": "./main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "mocha mytests",
+    "build": "electron-packager . all"
+  },
+  "authors": [
+    {
+      "name": "Areeb Asad",
+      "email": "areebasad95@gmail.com"
+    },
+    {
+      "name": "Osama Ahmed",
+      "email": "osamaahmedtahir17@gmail.com"
+    }
+    
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.6.2",
+    "electron-packager": "^8.5.2",
+    "electron-winstaller": "^2.5.2",
+    "mocha": "^3.2.0",
+    "qunitjs": "^2.1.1",
+    "spectron": "^3.6.0"
+  },
+  "dependencies": {
+    "about-window": "^1.6.1",
+    "cesium": "^1.31.0",
+    "electron-dl": "^1.5.0",
+    "electron-download-manager": "^1.2.0",
+    "electron-pdf-window": "^1.0.9",
+    "is-online": "^5.1.2",
+    "jquery": "^3.1.1",
+    "mathjs": "^3.8.0",
+    "photon": "^0.1.2-alpha"
+  }
+}
